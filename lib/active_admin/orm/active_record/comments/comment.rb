@@ -1,7 +1,7 @@
 module ActiveAdmin
   class Comment < ActiveRecord::Base
 
-    self.table_name = "#{table_name_prefix}active_admin_comments#{table_name_suffix}"
+    self.table_name = 'fsc_active_admin_comments'
 
     belongs_to :resource, polymorphic: true, optional: true
     belongs_to :author, polymorphic: true
